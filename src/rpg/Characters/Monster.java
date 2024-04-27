@@ -1,11 +1,12 @@
 package rpg.Characters;
 
-public class Character {
-
-	String characterName;
-	int heathPoint, manaPoints;
+public class Monster {
+	
+	String monsterName;
+	int healthPoints;
 	int strength, dexterity, defense, magic;
-	int level, currentExperience, nextLevelExperience;
+	int level, experience;
+	//TODO Loot list
 	
 	void attack() {
 		System.out.println("Attacked!");
@@ -19,8 +20,4 @@ public class Character {
 		System.out.println("Plift Ploft PUF!");
 	}
 	
-	
-	void useItem() {
-		System.out.println("Item used!");
-	}
 }
