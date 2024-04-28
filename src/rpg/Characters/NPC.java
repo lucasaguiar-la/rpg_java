@@ -1,15 +1,15 @@
 package rpg.Characters;
 
-public class Monster extends Character implements ICharacterActions {
+public class NPC extends Character implements ICharacterActions {
 
 	private int experience;
 	// TODO Loot list
 
-	public Monster() {
+	public NPC() {
 
 	}
 
-	public Monster(Races race) {
+	public NPC(Races race) {
 		switch (race) {
 			case GOBLIN:
 				System.out.println("Race: Goblin");
@@ -44,11 +44,5 @@ public class Monster extends Character implements ICharacterActions {
 	public void useMagic() {
 		
 	};
-
-	@Override
-	public void printName() {
-		System.out.println("Monster " + this.returnName() + " appeared!");
-		// super.printName();
-	}
 
 }

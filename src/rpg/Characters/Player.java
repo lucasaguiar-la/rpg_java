@@ -4,11 +4,9 @@ public class Player extends Character implements ICharacterActions {
 
 	int manaPoints;
 	int currentExperience, nextLevelExperience;
-
-	@Override
-	public void printName() {
-		System.out.println("Character " + this.returnName());
-		// super.printName();
+	
+	public Player() {
+		
 	}
 	
 	@Override
