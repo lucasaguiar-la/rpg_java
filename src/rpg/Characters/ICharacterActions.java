@@ -1,4 +1,4 @@
-package rpg.Characters;
+package rpg.characters;
 
 public interface ICharacterActions {
 	public void attack();

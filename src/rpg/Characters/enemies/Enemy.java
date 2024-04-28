@@ -1,15 +1,19 @@
-package rpg.Characters;
+package rpg.characters.enemies;
 
-public class NPC extends Character implements ICharacterActions {
+import rpg.characters.Character;
+import rpg.characters.ICharacterActions;
+import rpg.characters.Races;
+
+public abstract class Enemy extends Character {
 
 	private int experience;
 	// TODO Loot list
 
-	public NPC() {
+	public Enemy() {
 
 	}
 
-	public NPC(Races race) {
+	public Enemy(Races race) {
 		switch (race) {
 			case GOBLIN:
 				System.out.println("Race: Goblin");
@@ -33,16 +37,16 @@ public class NPC extends Character implements ICharacterActions {
 	@Override
 	public void attack() {
 		
-	};
+	}
 	
 	@Override
 	public void defend() {
 		
-	};
+	}
 	
 	@Override
 	public void useMagic() {
 		
-	};
+	}
 
 }

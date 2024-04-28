@@ -1,4 +1,4 @@
-package rpg.Characters;
+package rpg.characters;
 
 public class Player extends Character implements ICharacterActions {
 

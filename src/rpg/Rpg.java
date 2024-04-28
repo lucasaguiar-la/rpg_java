@@ -1,15 +1,12 @@
 package rpg;
 
-import rpg.Characters.NPC;
-import rpg.Characters.Player;
-import rpg.Characters.Races;
+import rpg.characters.Races;
+import rpg.characters.enemies.EnemiesFactory;
+import rpg.characters.enemies.Enemy;
 
 public class Rpg {
 
 	public static void main(String[] args) {
-		Player jogador01 = new Player();
-		jogador01.useMagic();
-
-		NPC monstro01 = new NPC(Races.GOBLIN);
+		Enemy npc = EnemiesFactory.returnNewEnemy(Races.GOBLIN);
 	}
 }
